@@ -14,10 +14,18 @@ public class SimpleResultSetsHandler implements ResultSetsHandler {
         List<E> result = new ArrayList<>();
         ResultSet rs = stmt.getResultSet();
         try {
-            Object entity = Class.forName(resultType);
-            ReflectionUtils.setPropToBeanFromResultSet(entity, rs);
-            result.add((E) entity);
+
+            while (rs.next()) {
+                Object entity = Class.forName(resultType).newInstance();
+                ReflectionUtils.setPropToBeanFromResultSet(entity, rs);
+                result.add((E) entity);
+            }
+
         } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
             e.printStackTrace();
         }
         return result;

@@ -21,7 +21,8 @@ public class TestExecutor {
         ResultSetsHandler rsh = new SimpleResultSetsHandler();
         Executor e = new SimpleExecutor(ds, rsh);
 
-        MapperStatement mapperStatement = new MapperStatement("1", "2", "1", "select * from sys_log_login");
+        MapperStatement mapperStatement = new MapperStatement("1", "2", "config.Log", "select * from sys_log_login");
         List<Object> query = e.query(mapperStatement, null);
+        System.out.println(query);
     }
 }
