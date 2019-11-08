@@ -38,7 +38,7 @@ public class SimpleDataSource implements DataSource {
             props.setProperty("password", password);
         }
 
-            Connection connection = DriverManager.getConnection(url, props);
+        Connection connection = DriverManager.getConnection(url, props);
         //configureConnection
         return connection;
     }

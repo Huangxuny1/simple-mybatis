@@ -1,4 +1,4 @@
-package config;
+package com.huangxunyi.datasource;
 
 public class Log {
     private String id;
@@ -9,7 +9,8 @@ public class Log {
     private String type;
     private String user_id;
 
-    public Log(){}
+    public Log() {
+    }
 
     public Log(String id, String create_time, String ip, String message, String success, String type, String user_id) {
         this.id = id;

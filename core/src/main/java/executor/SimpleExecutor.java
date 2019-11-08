@@ -45,4 +45,17 @@ public class SimpleExecutor implements Executor {
 
 
     }
+
+    @Override
+    public int update(MapperStatement ms, Object parameter) throws SQLException {
+        Statement stmt = null;
+        try {
+            Connection connection = dataSource.getConnection();
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = statementHandler.prepare(connection);
+            return statementHandler.update(stmt);
+        } finally {
+            closeStmt(stmt);
+        }
+    }
 }
