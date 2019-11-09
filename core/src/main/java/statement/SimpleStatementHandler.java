@@ -1,7 +1,6 @@
 package statement;
 
-import executor.Executor;
-import mapping.MapperStatement;
+import mapping.MappedStatement;
 import session.ResultSetsHandler;
 
 import java.sql.Connection;
@@ -11,15 +10,15 @@ import java.util.List;
 
 public class SimpleStatementHandler implements StatementHandler {
 
-    private MapperStatement mapperStatement;
+    private MappedStatement mappedStatement;
     private ResultSetsHandler resultHandler;
     private String sql;
 
 
-    public SimpleStatementHandler(MapperStatement mapperStatement, ResultSetsHandler resultSetsHandler) {
-        this.mapperStatement = mapperStatement;
+    public SimpleStatementHandler(MappedStatement mappedStatement, ResultSetsHandler resultSetsHandler) {
+        this.mappedStatement = mappedStatement;
         this.resultHandler = resultSetsHandler;
-        this.sql = mapperStatement.getSql();
+        this.sql = mappedStatement.getSql();
     }
 
     @Override
@@ -51,7 +50,7 @@ public class SimpleStatementHandler implements StatementHandler {
     @Override
     public <E> List<E> query(Statement statement, ResultSetsHandler resultSetsHandler) throws SQLException {
         statement.execute(sql);
-        return resultSetsHandler.handleResultSets(statement, mapperStatement.getResultType());
+        return resultSetsHandler.handleResultSets(statement, mappedStatement.getResultType());
     }
 
 

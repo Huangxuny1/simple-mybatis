@@ -3,7 +3,8 @@ package com.huangxunyi.datasource;
 import datasource.SimpleDataSource;
 import executor.Executor;
 import executor.SimpleExecutor;
-import mapping.MapperStatement;
+import mapping.MappedStatement;
+import mapping.SqlType;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,8 +30,8 @@ public class TestExecutor {
 
     @Test
     public void testSimpleExecutor() throws SQLException {
-        MapperStatement mapperStatement = new MapperStatement("1", "2", "com.huangxunyi.datasource.Log", "select * from sys_log_login");
-        List<Log> query = e.query(mapperStatement, null);
+        MappedStatement mappedStatement = new MappedStatement("1", "2", "com.huangxunyi.datasource.Log", "select * from sys_log_login", SqlType.INSERT);
+        List<Log> query = e.query(mappedStatement, null);
         for (int i = 0; i < query.size(); i++) {
             Log log = query.get(i);
             System.out.println(log);

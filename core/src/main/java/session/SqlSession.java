@@ -248,7 +248,7 @@ public interface SqlSession extends Closeable {
 //   * 得到配置
 //   * @return Configuration
 //   */
-//  Configuration getConfiguration();
+  Configuration getConfiguration();
 
   /**
    * Retrieves a mapper.

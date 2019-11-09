@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.huangxunyi.datasource.Log">
+
+    <select id="getLog" resultType="com.huangxunyi.datasource.Log">
+        select * from log where id = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.huangxunyi.datasource.Log">
+        select * from log
+    </select>
+
+    <update id="updateLog">
+        update log set message = 'message' where id = #{id}
+    </update>
+
+</mapper>

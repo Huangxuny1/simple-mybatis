@@ -1,6 +1,6 @@
 package executor;
 
-import mapping.MapperStatement;
+import mapping.MappedStatement;
 import session.ResultSetsHandler;
 import statement.SimpleStatementHandler;
 import statement.StatementHandler;
@@ -32,11 +32,11 @@ public class SimpleExecutor implements Executor {
     }
 
     @Override
-    public <E> List<E> query(MapperStatement mapperStatement, Object params) throws SQLException {
+    public <E> List<E> query(MappedStatement mappedStatement, Object params) throws SQLException {
         Statement stmt = null;
         try {
             Connection connection = dataSource.getConnection();
-            StatementHandler statementHandler = new SimpleStatementHandler(mapperStatement, resultSetsHandler);
+            StatementHandler statementHandler = new SimpleStatementHandler(mappedStatement, resultSetsHandler);
             stmt = statementHandler.prepare(connection);
             return statementHandler.query(stmt, resultSetsHandler);
         } finally {
@@ -47,7 +47,7 @@ public class SimpleExecutor implements Executor {
     }
 
     @Override
-    public int update(MapperStatement ms, Object parameter) throws SQLException {
+    public int update(MappedStatement ms, Object parameter) throws SQLException {
         Statement stmt = null;
         try {
             Connection connection = dataSource.getConnection();
