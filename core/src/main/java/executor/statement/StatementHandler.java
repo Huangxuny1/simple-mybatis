@@ -1,7 +1,7 @@
-package statement;
+package executor.statement;
 
 
-import session.ResultSetsHandler;
+import executor.resultset.ResultSetsHandler;
 
 import java.sql.Connection;
 import java.sql.SQLException;

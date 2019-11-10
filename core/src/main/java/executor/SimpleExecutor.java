@@ -1,9 +1,9 @@
 package executor;
 
 import mapping.MappedStatement;
-import session.ResultSetsHandler;
-import statement.SimpleStatementHandler;
-import statement.StatementHandler;
+import executor.resultset.ResultSetsHandler;
+import executor.statement.SimpleStatementHandler;
+import executor.statement.StatementHandler;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

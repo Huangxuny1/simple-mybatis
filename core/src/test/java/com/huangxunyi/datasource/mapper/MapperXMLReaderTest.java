@@ -1,4 +1,4 @@
-package com.huangxunyi.datasource;
+package com.huangxunyi.datasource.mapper;
 
 import mapping.MappedStatement;
 import org.junit.Test;
@@ -14,7 +14,7 @@ public class MapperXMLReaderTest {
     @Test
     public void testXmlRead() {
         Configuration configuration = new Configuration();
-        File f = new File("/Users/athos/GitRepo/simple-mybatis/core/src/test/resources/TestMapper.xml");
+        File f = new File("src/test/resources/TestMapper.xml");
         XmlUtil.readMapperXml(f, configuration);
 
         Map<String, MappedStatement> mappedStatements = configuration.getMappedStatements();

@@ -1,7 +1,7 @@
-package statement;
+package executor.statement;
 
 import mapping.MappedStatement;
-import session.ResultSetsHandler;
+import executor.resultset.ResultSetsHandler;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -24,8 +24,8 @@ public class SimpleStatementHandler implements StatementHandler {
     @Override
     public Statement prepare(Connection connection) throws SQLException {
         // todo check SQL
-        Statement statement = null;
-        statement = initStatment(connection);
+        String sql = mappedStatement.getSql();
+        Statement statement = connection.prepareStatement(sql);
         // todo config
         return statement;
     }
@@ -49,12 +49,9 @@ public class SimpleStatementHandler implements StatementHandler {
 
     @Override
     public <E> List<E> query(Statement statement, ResultSetsHandler resultSetsHandler) throws SQLException {
-        statement.execute(sql);
+        statement.executeQuery(sql);
         return resultSetsHandler.handleResultSets(statement, mappedStatement.getResultType());
     }
 
 
-    private Statement initStatment(Connection connection) throws SQLException {
-        return connection.createStatement();
-    }
 }

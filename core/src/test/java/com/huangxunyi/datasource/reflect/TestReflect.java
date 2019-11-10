@@ -1,4 +1,4 @@
-package com.huangxunyi.datasource;
+package com.huangxunyi.datasource.reflect;
 
 import net.sf.cglib.proxy.Callback;
 import org.junit.Test;

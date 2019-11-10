@@ -13,4 +13,8 @@
         update log set message = 'message' where id = #{id}
     </update>
 
+    <insert id="insertLog">
+        insert into log values (#{id},#{},#{},#{},#{},#{})
+    </insert>
+
 </mapper>

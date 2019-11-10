@@ -6,6 +6,7 @@ import session.SqlSession;
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.sql.SQLException;
 import java.sql.SQLType;
 import java.util.Collection;
 
@@ -36,7 +37,7 @@ public class MapperProxy<T> implements Serializable, InvocationHandler {
         return null;
     }
 
-    private Object execute(Method method, Object[] args) {
+    private Object execute(Method method, Object[] args) throws SQLException {
         String stmtID = mapperInterface.getName() + "." + method.getName();
         MappedStatement ms = sqlSession.getConfiguration().getMappedStatement(stmtID);
         Object result = null;

@@ -1,6 +1,5 @@
 package session;
 
-import javax.security.auth.login.Configuration;
 import java.sql.Connection;
 
 public interface SqlSessionFactory {
