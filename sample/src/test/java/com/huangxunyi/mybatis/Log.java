@@ -1,5 +1,4 @@
-package com.huangxunyi.datasource;
-
+package com.huangxunyi.mybatis;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

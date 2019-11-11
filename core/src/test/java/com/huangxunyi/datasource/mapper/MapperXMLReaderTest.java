@@ -16,7 +16,6 @@ public class MapperXMLReaderTest {
         Configuration configuration = new Configuration();
         File f = new File("src/test/resources/TestMapper.xml");
         XmlUtil.readMapperXml(f, configuration);
-
         Map<String, MappedStatement> mappedStatements = configuration.getMappedStatements();
         Iterator<String> iterator = mappedStatements.keySet().iterator();
         while (iterator.hasNext()){
