@@ -15,6 +15,11 @@ public class SimpleSqlSession implements SqlSession {
     private final Configuration configuration;
     private final Executor executor;
 
+//    public SimpleSqlSession(Configuration configuration) {
+//        this.configuration = configuration;
+//        this.executor = new SimpleExecutor();
+//    }
+
     public SimpleSqlSession(Configuration configuration, Executor executor) {
         this.configuration = configuration;
         this.executor = executor;

@@ -21,11 +21,11 @@ public class TestExecutor {
 
     @Before
     public void dataSource() {
-        ds = new SimpleDataSource("com.mysql.cj.jdbc.Driver", "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT", "root", "root");
-        Assert.assertNotNull(ds);
-        ResultSetsHandler rsh = new SimpleResultSetsHandler();
-        e = new SimpleExecutor(ds, rsh);
-        Assert.assertNotNull(e);
+//        ds = new SimpleDataSource("com.mysql.cj.jdbc.Driver", "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT", "root", "123456787");
+//        Assert.assertNotNull(ds);
+//        ResultSetsHandler rsh = new SimpleResultSetsHandler();
+//        e = new SimpleExecutor(ds, rsh);
+//        Assert.assertNotNull(e);
     }
 
     @Test
