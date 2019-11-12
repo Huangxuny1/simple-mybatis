@@ -6,6 +6,7 @@ import session.SqlSession;
 import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
 import java.sql.SQLException;
 import java.sql.SQLType;
 import java.util.Collection;
@@ -66,4 +67,5 @@ public class MapperProxy<T> implements Serializable, InvocationHandler {
         }
         return result;
     }
+
 }
