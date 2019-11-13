@@ -17,6 +17,5 @@ public class TestSqlSession {
         SqlSession sqlSession = sqlSessionFactory.openSession(false);
         List<Log> getAll = sqlSession.selectList("com.huangxunyi.datasource.Log.getAll");
         System.out.println(getAll.toString());
-
     }
 }
