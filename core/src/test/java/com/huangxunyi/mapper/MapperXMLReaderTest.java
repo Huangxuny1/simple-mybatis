@@ -1,4 +1,4 @@
-package com.huangxunyi.datasource.mapper;
+package com.huangxunyi.mapper;
 
 import mapping.MappedStatement;
 import org.junit.Test;

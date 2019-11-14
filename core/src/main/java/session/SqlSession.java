@@ -141,13 +141,13 @@ public interface SqlSession extends Closeable {
    */
   int insert(String statement, Object parameter);
 
-  /**
-   * Execute an update executor.statement. The number of rows affected will be returned.
-   * 更新记录。返回的是受影响的行数
-   * @param statement Unique identifier matching the executor.statement to execute.
-   * @return int The number of rows affected by the update.
-   */
-  int update(String statement);
+//  /**
+//   * Execute an update executor.statement. The number of rows affected will be returned.
+//   * 更新记录。返回的是受影响的行数
+//   * @param statement Unique identifier matching the executor.statement to execute.
+//   * @return int The number of rows affected by the update.
+//   */
+//  int update(String statement);
 
   /**
    * Execute an update executor.statement. The number of rows affected will be returned.

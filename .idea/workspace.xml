@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7be6d72-1480-4bda-95b8-c19b358942ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/mapper/TestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/test/resources/TestMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/BetterSimpleExecutor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/TestExecutor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/mapping/MappedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/mapping/MappedStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/session/SqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/SqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/XmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/XmlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/TestDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/TestDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/mapper/MapperXMLReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/mapper/MapperXMLReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/reflect/TestReflect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/reflect/TestReflect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/META-INF/core.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/META-INF/core.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/test-classes/TestMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/test-classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/test-classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/resources/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/resources/LogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,100 +49,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/statement/RoutingStatementHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="310" selection-start-line="310" selection-end-line="310" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/mapper/MapperXMLReaderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/Log.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -141,40 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>returnInstanceForEmptyRow</find>
-      <find>static</find>
-      <find>env</find>
-      <find>pool</find>
-      <find>==&gt;</find>
-      <find>Setting autocommit</find>
-      <find>PooledDataSource forcefully closed/removed all connections.</find>
-      <find>unpooleddatasource</find>
-      <find>Opening JDBC Connection</find>
-      <find>resultSetCount</find>
-      <find>权限注销成功</find>
-      <find>Row:</find>
-      <find>namespace</find>
-      <find>isD</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java" />
-        <option value="$PROJECT_DIR$/core/src/test/resources/config.properties" />
-        <option value="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/mapper/MapperXMLReaderTest.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -202,284 +87,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="76" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
   <component name="ProjectId" id="1TMqkVE9tMyadduJ8VPQmpqlAVF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="binding" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="executor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="executor" type="462c0819:PsiDirectoryNode" />
-              <item name="resultset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="executor" type="462c0819:PsiDirectoryNode" />
-              <item name="statement" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="session" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="session" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huangxunyi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample/src/test/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -489,15 +103,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\test\resources\mapper" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample/src/test/resources" />
+      <recent name="$PROJECT_DIR$/core/src/test/resources" />
+      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\main\java\mapping" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.huangxunyi.datasource" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/core/src/test/resources" />
-      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\main\java\mapping" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\test\resources\mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -512,7 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSqlSession.TestSqlSessionFactoryBuilder">
+  <component name="RunManager" selected="Application.TestMybatis">
     <configuration name="TestMybatis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huangxunyi.mybatis.TestMybatis" />
       <module name="sample" />
@@ -526,49 +141,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperXMLReaderTest.testXmlRead (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSqlSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.huangxunyi.datasource.mapper.*" />
+          <option name="PATTERN" value="com.huangxunyi.datasource.session.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.huangxunyi.datasource.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.datasource.mapper.MapperXMLReaderTest" />
-      <option name="METHOD_NAME" value="testXmlRead" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDataSource.testSimpleDataSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.huangxunyi.datasource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.huangxunyi.datasource" />
-      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.datasource.TestDataSource" />
-      <option name="METHOD_NAME" value="testSimpleDataSource" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestExecutor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.huangxunyi.datasource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.huangxunyi.datasource" />
-      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.datasource.TestExecutor" />
+      <option name="PACKAGE_NAME" value="com.huangxunyi.datasource.session" />
+      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.datasource.session.TestSqlSession" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huangxunyi.session.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
+      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
+      <option name="METHOD_NAME" value="TestSqlSessionFactoryBuilder" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -589,13 +188,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSqlSession.TestUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huangxunyi.session.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
+      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
+      <option name="METHOD_NAME" value="TestUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSqlSession.TestSqlSessionFactoryBuilder" />
         <item itemvalue="Application.TestMybatis" />
-        <item itemvalue="JUnit.TestExecutor" />
-        <item itemvalue="JUnit.TestDataSource.testSimpleDataSource" />
-        <item itemvalue="JUnit.MapperXMLReaderTest.testXmlRead (1)" />
+        <item itemvalue="JUnit.TestSqlSession.TestUpdate" />
+        <item itemvalue="JUnit.TestSqlSession.TestSqlSessionFactoryBuilder (1)" />
+        <item itemvalue="JUnit.TestSqlSession.TestSqlSessionFactoryBuilder" />
+        <item itemvalue="JUnit.TestSqlSession" />
       </list>
     </recent_temporary>
   </component>
@@ -632,32 +247,6 @@
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 13h 55m 49s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 13h 56m 08s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 13h 56m 26s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 13h 56m 35s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 14h 00m 05s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 14h 00m 29s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestSqlSession_TestSqlSessionFactoryBuilder - 2019.11.13 at 14h 05m 00s.xml">
-      <configuration name="TestSqlSession.TestSqlSessionFactoryBuilder" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3991000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -666,41 +255,6 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79614323" visible="true" weight="0.2473525" />
-      <window_info id="Structure" order="1" sideWeight="0.20385675" side_tool="true" weight="0.2473525" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29180327" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39344263" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.36557376" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.31967214" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.24962178" />
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -711,12 +265,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -743,81 +291,73 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java</url>
-          <line>29</line>
-          <properties />
+          <line>30</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java</url>
           <line>17</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/datasource/pooled/PooledConnection.java</url>
           <line>50</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java</url>
           <line>97</line>
-          <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/datasource/pooled/PooledDataSource.java</url>
           <line>351</line>
-          <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java</url>
           <line>62</line>
-          <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/statement/RoutingStatementHandler.java</url>
           <line>78</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/statement/BaseStatementHandler.java</url>
           <line>87</line>
-          <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java</url>
           <line>24</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java</url>
-          <line>17</line>
-          <properties />
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
+          <line>25</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java</url>
-          <line>31</line>
-          <properties />
+          <line>30</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java</url>
           <line>63</line>
-          <properties />
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/scripting/defaults/DefaultParameterHandler.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java</url>
@@ -833,251 +373,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>file.getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>file.getName().endsWith(Constants.MAPPER_FILE_SUFFIX)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>resultSets</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>rs.getString(declaredFields[i].getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>declaredFields[5].getName()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>declaredFields[5]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>declaredFields[5].getName</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>declaredFields[i].getName</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>entity</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/session/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="754" selection-start-line="754" selection-end-line="754" />
-          <folding>
-            <element signature="e#23647#23648#0" expanded="true" />
-            <element signature="e#23693#23694#0" expanded="true" />
-            <element signature="e#24912#24913#0" expanded="true" />
-            <element signature="e#24962#24963#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/builder/MapperBuilderAssistant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="272" selection-start-line="272" selection-end-line="272" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/builder/xml/XMLStatementBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="112" column="42" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/test/resources/LogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/TestDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/session/SqlSessionFactoryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/statement/BaseStatementHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/statement/RoutingStatementHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/TestExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/LogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/mapper/MapperXMLReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

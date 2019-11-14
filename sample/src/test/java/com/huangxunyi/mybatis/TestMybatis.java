@@ -19,11 +19,18 @@ public class TestMybatis {
 
 //        Log log=  session.selectOne("getLogById",2);
 //        System.out.println(log.toString());
-//        List<Log> getAllLog = session.selectList("getAllLog");
+        List<Log> allLog = session.selectList("getAllLog");
+        Log log = allLog.get(0);
+//        log.setMessage("change Message For Update");
+//        session.update("updateLog");
 //        System.out.println(getAllLog);
-        Map<String, Log> LogMap = session.selectMap("getAllLog", "create_time");
-        System.out.println(LogMap);
-        //session.commit();
+//        Map<String, Log> LogMap = session.selectMap("getAllLog", "create_time");
+//        System.out.println(LogMap);
+        LogMapper mapper = session.getMapper(LogMapper.class);
+        log.setMessage(" message1 ");
+        System.out.println(log);
+        mapper.updateLog(log);
+        session.commit();
         session.close();
     }
 }

@@ -15,11 +15,6 @@ public class SimpleSqlSession implements SqlSession {
     private final Configuration configuration;
     private final Executor executor;
 
-//    public SimpleSqlSession(Configuration configuration) {
-//        this.configuration = configuration;
-//        this.executor = new SimpleExecutor();
-//    }
-
     public SimpleSqlSession(Configuration configuration, Executor executor) {
         this.configuration = configuration;
         this.executor = executor;
@@ -41,12 +36,18 @@ public class SimpleSqlSession implements SqlSession {
     @Override
     public <E> List<E> selectList(String statement) throws SQLException {
         MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+        if (null == mappedStatement) {
+            throw new RuntimeException(" mappedStatement is null , ID : " + statement);
+        }
         return executor.query(mappedStatement, null);
     }
 
     @Override
     public <E> List<E> selectList(String statement, Object parameter) throws SQLException {
         MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+        if (null == mappedStatement) {
+            throw new RuntimeException(" mappedStatement is null , ID : " + statement);
+        }
         return executor.query(mappedStatement, parameter);
     }
 
@@ -81,13 +82,14 @@ public class SimpleSqlSession implements SqlSession {
     }
 
     @Override
-    public int update(String statement) {
-        return 0;
-    }
-
-    @Override
     public int update(String statement, Object parameter) {
-        return 0;
+        try {
+            MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+            return executor.update(mappedStatement, parameter);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     @Override

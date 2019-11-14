@@ -26,12 +26,15 @@ public class ReflectionUtils {
     public static void setPropToBeanFromResultSet(Object entity, ResultSet rs) throws SQLException {
         Field[] declaredFields = entity.getClass().getDeclaredFields();// 通过反射获取对象的所有属性
         for (int i = 0; i < declaredFields.length; i++) {
-            if (declaredFields[i].getType().getSimpleName().equals("String")) {
-                setPropToBean(entity, declaredFields[i].getName(), rs.getString(declaredFields[i].getName()));
-            } else if (declaredFields[i].getType().getSimpleName().equals("Integer")) {
-                setPropToBean(entity, declaredFields[i].getName(), rs.getInt(declaredFields[i].getName()));
-            } else if (declaredFields[i].getType().getSimpleName().equals("Boolean")) {
-                setPropToBean(entity, declaredFields[i].getName(), rs.getBoolean(declaredFields[i].getName()));
+            String fieldName = declaredFields[i].getName();
+            if (String.class.equals(declaredFields[i].getType())) {
+                setPropToBean(entity, fieldName, rs.getString(fieldName));
+            } else if (Integer.class.equals(declaredFields[i].getType())) {
+                setPropToBean(entity, fieldName, rs.getInt(fieldName));
+            } else if (Boolean.class.equals(declaredFields[i].getType())) {
+                setPropToBean(entity, fieldName, rs.getBoolean(fieldName));
+            } else {
+                throw new RuntimeException(" 暂不支持数据类型  : " + fieldName);
             }
         }
     }

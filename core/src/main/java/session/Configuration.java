@@ -12,13 +12,19 @@ import java.util.Properties;
 @ToString
 @Getter
 public class Configuration {
-    /**配置项*/
+    /**
+     * 配置项
+     */
     public static Properties PROPS = new Properties();
 
-    /** mapper代理注册器 */
+    /**
+     * mapper代理注册器
+     */
     protected final MapperRegistry mapperRegistry = new MapperRegistry();
 
-    /** mapper文件的select/update语句的id和SQL语句属性 **/
+    /**
+     * mapper文件的select/update语句的id和SQL语句属性
+     **/
     protected final Map<String, MappedStatement> mappedStatements = new HashMap<>();
 
     /**
@@ -26,8 +32,7 @@ public class Configuration {
      *
      * @param type
      */
-    public <T> void addMapper(Class<T> type)
-    {
+    public <T> void addMapper(Class<T> type) {
         this.mapperRegistry.addMapper(type);
     }
 
@@ -39,8 +44,7 @@ public class Configuration {
      * @return
      * @see
      */
-    public <T> T getMapper(Class<T> type, SqlSession sqlSession)
-    {
+    public <T> T getMapper(Class<T> type, SqlSession sqlSession) {
         return this.mapperRegistry.getMapper(type, sqlSession);
     }
 
@@ -50,8 +54,7 @@ public class Configuration {
      * @param key
      * @param mappedStatement
      */
-    public void addMappedStatement(String key, MappedStatement mappedStatement)
-    {
+    public void addMappedStatement(String key, MappedStatement mappedStatement) {
         this.mappedStatements.put(key, mappedStatement);
     }
 
@@ -62,8 +65,8 @@ public class Configuration {
      * @return
      * @see
      */
-    public MappedStatement getMappedStatement(String id)
-    {
+    public MappedStatement getMappedStatement(String id) {
+        // 原版 mybatis 中 getID时会根据 Ambiguity 判断是否存在重复的key 如果存在则会抛出异常
         return this.mappedStatements.get(id);
     }
 
@@ -73,8 +76,7 @@ public class Configuration {
      * @param key
      * @return
      */
-    public static String getProperty(String key)
-    {
+    public static String getProperty(String key) {
         return getProperty(key, "");
     }
 
@@ -82,12 +84,10 @@ public class Configuration {
      * 获取字符型属性(可指定默认值)
      *
      * @param key
-     * @param defaultValue
-     *            默认值
+     * @param defaultValue 默认值
      * @return
      */
-    public static String getProperty(String key, String defaultValue)
-    {
+    public static String getProperty(String key, String defaultValue) {
 
         return PROPS.containsKey(key) ? PROPS.getProperty(key) : defaultValue;
     }

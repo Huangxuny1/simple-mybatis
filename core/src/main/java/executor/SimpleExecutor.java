@@ -28,8 +28,8 @@ public class SimpleExecutor implements Executor {
     public <E> List<E> query(MappedStatement mappedStatement, Object params) throws SQLException {
         Statement stmt = null;
         try {
-            Connection connection = transaction.getConnection();
             StatementHandler statementHandler = new SimpleStatementHandler(mappedStatement, resultSetsHandler);
+            Connection connection = transaction.getConnection();
             stmt = statementHandler.prepare(connection);
             return statementHandler.query(stmt, resultSetsHandler);
         } finally {
@@ -44,10 +44,14 @@ public class SimpleExecutor implements Executor {
             Connection connection = transaction.getConnection();
             StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
             stmt = statementHandler.prepare(connection);
+
             return statementHandler.update(stmt);
         } finally {
             closeStmt(stmt);
         }
+    }
+    private void prepareStatement(){
+
     }
 
     private void closeStmt(Statement stmt) {

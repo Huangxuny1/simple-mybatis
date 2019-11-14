@@ -2,17 +2,13 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.huangxunyi.mybatis.LogMapper">
+<mapper namespace="mybatis-test2">
     <select id="getLogById" resultType="com.huangxunyi.mybatis.Log">
         SELECT * FROM sys_log_login WHERE type = #{type};
     </select>
 
     <select id="getAllLog" resultType="com.huangxunyi.mybatis.Log">
-        SELECT * FROM sys_log_login;
+        UPDATE sys_log_login SET message = '#{message}' WHERE id = #{id}
     </select>
-
-    <update id="updateLog" parameterType="com.huangxunyi.mybatis.Log">
-        UPDATE log SET message = #{message} WHERE id = #{id}
-    </update>
 
 </mapper>

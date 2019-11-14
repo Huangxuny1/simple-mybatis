@@ -16,6 +16,7 @@ public class MappedStatement {
     private String sqlId;
     private String resultType;
     private String sql;
+    private String originSql;
     private SqlType sqlType;
 
 
