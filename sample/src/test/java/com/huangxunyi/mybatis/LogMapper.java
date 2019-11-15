@@ -9,4 +9,6 @@ public interface LogMapper {
     List<Log> getAllLog();
 
     void updateLog(Log log);
+
+    void insertLog(Log log);
 }

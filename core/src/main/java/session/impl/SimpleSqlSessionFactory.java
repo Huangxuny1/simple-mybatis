@@ -1,6 +1,8 @@
 package session.impl;
 
+import datasource.DataSourceFactory;
 import datasource.SimpleDataSource;
+import datasource.SimpleDataSourceFactory;
 import executor.SimpleExecutor;
 import executor.Executor;
 import session.Configuration;
@@ -40,13 +42,15 @@ public class SimpleSqlSessionFactory implements SqlSessionFactory {
     private SqlSession openSessionFromDataSource(boolean autoCommit) {
         // 这里源码是从 environment 中取 factory
         final TransactionFactory transactionFactory = new JDBCTransactionFactory();
-        DataSource dataSource = new SimpleDataSource(
-                Configuration.PROPS.getProperty("db.driver"),
-                Configuration.PROPS.getProperty("db.url"),
-                Configuration.PROPS.getProperty("db.username"),
-                Configuration.PROPS.getProperty("db.password")
-        );
-
+//        DataSource dataSource = new SimpleDataSource(
+//                Configuration.PROPS.getProperty("db.driver"),
+//                Configuration.PROPS.getProperty("db.url"),
+//                Configuration.PROPS.getProperty("db.username"),
+//                Configuration.PROPS.getProperty("db.password")
+//        );
+        DataSourceFactory factory = new SimpleDataSourceFactory();
+        factory.setProperties(Configuration.PROPS);
+        DataSource dataSource = factory.getDataSource();
         Transaction transaction = transactionFactory.newTransaction(dataSource, 0, false);
         // todo 源码中executor是configuration中实例化的 并且支持 interceptor -- 未来如果有时间会支持插件
         Executor executor = new SimpleExecutor(configuration, transaction);

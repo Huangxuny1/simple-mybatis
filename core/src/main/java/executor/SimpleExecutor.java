@@ -50,9 +50,6 @@ public class SimpleExecutor implements Executor {
             closeStmt(stmt);
         }
     }
-    private void prepareStatement(){
-
-    }
 
     private void closeStmt(Statement stmt) {
         if (stmt != null) {

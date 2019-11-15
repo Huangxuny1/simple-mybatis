@@ -4,6 +4,7 @@ import mapping.MappedStatement;
 import executor.resultset.ResultSetsHandler;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -28,6 +29,7 @@ public class SimpleStatementHandler implements StatementHandler {
     @Override
     public Statement prepare(Connection connection) throws SQLException {
         // todo check SQL
+        mappedStatement.setOriginSql(this.sql);
         String sql = parseSymbol(this.sql);
         mappedStatement.setSql(sql);
         Statement statement = connection.prepareStatement(sql);
@@ -36,8 +38,10 @@ public class SimpleStatementHandler implements StatementHandler {
     }
 
     @Override
-    public void parameterize(Statement statement) throws SQLException {
-
+    public void parameterize(PreparedStatement statement) throws SQLException {
+        //todo Just Test  需要反射 #{} 中的字段 并获取 传入对象对应的field  并获得值 根据类型 set
+        statement.setString(1, "asdasd");
+        statement.setString(2, "402880e4643a734301643a7403d4111");
     }
 
 
@@ -49,8 +53,10 @@ public class SimpleStatementHandler implements StatementHandler {
     @Override
     public int update(Statement statement) throws SQLException {
         // KeyGen
-        statement.execute(sql, Statement.RETURN_GENERATED_KEYS);
-        return statement.getUpdateCount();
+        PreparedStatement statement1 = (PreparedStatement) statement;
+        parameterize(statement1);
+        statement1.execute();
+        return statement1.getUpdateCount();
     }
 
     @Override

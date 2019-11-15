@@ -10,11 +10,11 @@
     </select>
 
     <update id="updateLog">
-        update log set message = '#{message}' where id = #{id}
+        UPDATE sys_log_login SET message=#{message} WHERE id=#{id}
     </update>
 
     <insert id="insertLog">
-        insert into log values (#{id},#{},#{},#{},#{},#{})
+        insert into log values (#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
     </insert>
 
 </mapper>

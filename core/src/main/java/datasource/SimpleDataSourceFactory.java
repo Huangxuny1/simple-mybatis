@@ -10,13 +10,17 @@ public class SimpleDataSourceFactory implements DataSourceFactory {
     private static final int DRIVER_PROPERTY_PREFIX_LENGTH = DRIVER_PROPERTY_PREFIX.length();
 
     public SimpleDataSourceFactory() {
-        this.dataSource = new SimpleDataSource();
+        //this.dataSource = new SimpleDataSource();
     }
 
     @Override
     public void setProperties(Properties props) {
-        Properties driverProperties = new Properties();
-
+        this.dataSource = new SimpleDataSource(
+                props.getProperty("db.driver"),
+                props.getProperty("db.url"),
+                props.getProperty("db.username"),
+                props.getProperty("db.password")
+        );
     }
 
     @Override

@@ -56,10 +56,10 @@ public class MapperProxy<T> implements Serializable, InvocationHandler {
                 break;
 
             case UPDATE:
-                sqlSession.update(stmtID, args);
+                result = sqlSession.update(stmtID, args);
                 break;
             case INSERT:
-                sqlSession.insert(stmtID, args);
+                result = sqlSession.insert(stmtID, args);
                 break;
             default:
                 //todo defailt

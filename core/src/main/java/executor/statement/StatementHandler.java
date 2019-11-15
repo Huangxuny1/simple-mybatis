@@ -4,6 +4,7 @@ package executor.statement;
 import executor.resultset.ResultSetsHandler;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -15,7 +16,7 @@ public interface StatementHandler {
             throws SQLException;
 
     //参数化
-    void parameterize(Statement statement)
+    void parameterize(PreparedStatement statement)
             throws SQLException;
 
     //批处理

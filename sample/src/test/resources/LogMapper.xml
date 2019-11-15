@@ -11,8 +11,12 @@
         SELECT * FROM sys_log_login;
     </select>
 
-    <update id="updateLog" parameterType="com.huangxunyi.mybatis.Log">
-        UPDATE log SET message = #{message} WHERE id = #{id}
+    <update id="updateLog">
+        UPDATE sys_log_login SET message = #{message} WHERE id = #{id}
     </update>
+
+    <insert id="insertLog">
+        INSERT INTO sys_log_login VALUES (#{id},#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
+    </insert>
 
 </mapper>

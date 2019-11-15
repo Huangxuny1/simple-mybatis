@@ -28,8 +28,11 @@ public class TestMybatis {
 //        System.out.println(LogMap);
         LogMapper mapper = session.getMapper(LogMapper.class);
         log.setMessage(" message1 ");
-        System.out.println(log);
+//        System.out.println(log);
         mapper.updateLog(log);
+//        log.setMessage(" insert message ");
+//        log.setId("402880e4643a734301643a7403d4211");
+//        mapper.insertLog(log);
         session.commit();
         session.close();
     }
