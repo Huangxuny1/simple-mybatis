@@ -1,14 +1,15 @@
 package session.impl;
 
+import datasource.DataSourceFactory;
 import datasource.SimpleDataSource;
-import executor.BetterSimpleExecutor;
+import datasource.SimpleDataSourceFactory;
+import executor.SimpleExecutor;
 import executor.Executor;
 import session.Configuration;
 import session.SqlSession;
 import session.SqlSessionFactory;
 import transaction.Transaction;
 import transaction.TransactionFactory;
-import transaction.impl.JDBCTransaction;
 import transaction.impl.JDBCTransactionFactory;
 import utils.Constants;
 import utils.XmlUtil;
@@ -16,7 +17,6 @@ import utils.XmlUtil;
 import javax.sql.DataSource;
 import java.io.File;
 import java.net.URL;
-import java.sql.Connection;
 
 public class SimpleSqlSessionFactory implements SqlSessionFactory {
 
@@ -29,7 +29,7 @@ public class SimpleSqlSessionFactory implements SqlSessionFactory {
 
     @Override
     public SqlSession openSession() {
-        return openSession(false);
+        return openSession(true);
     }
 
 
@@ -42,16 +42,12 @@ public class SimpleSqlSessionFactory implements SqlSessionFactory {
     private SqlSession openSessionFromDataSource(boolean autoCommit) {
         // 这里源码是从 environment 中取 factory
         final TransactionFactory transactionFactory = new JDBCTransactionFactory();
-        DataSource dataSource = new SimpleDataSource(
-                Configuration.PROPS.getProperty("db.driver"),
-                Configuration.PROPS.getProperty("db.url"),
-                Configuration.PROPS.getProperty("db.username"),
-                Configuration.PROPS.getProperty("db.password")
-        );
-
-        Transaction transaction = transactionFactory.newTransaction(dataSource, 0, false);
+        DataSourceFactory factory = new SimpleDataSourceFactory();
+        factory.setProperties(Configuration.PROPS);
+        DataSource dataSource = factory.getDataSource();
+        Transaction transaction = transactionFactory.newTransaction(dataSource, 0, autoCommit);
         // todo 源码中executor是configuration中实例化的 并且支持 interceptor -- 未来如果有时间会支持插件
-        Executor executor = new BetterSimpleExecutor(configuration, transaction);
+        Executor executor = new SimpleExecutor(configuration, transaction);
         return new SimpleSqlSession(configuration, executor);
     }
 
@@ -66,7 +62,7 @@ public class SimpleSqlSessionFactory implements SqlSessionFactory {
         if (file.isDirectory()) {
             File[] mappers = file.listFiles();
             for (File mapper : mappers) {
-                if (file.getName().endsWith(Constants.MAPPER_FILE_SUFFIX)) {
+                if (mapper.getName().endsWith(Constants.MAPPER_FILE_SUFFIX)) {
                     XmlUtil.readMapperXml(mapper, configuration);
                 }
             }

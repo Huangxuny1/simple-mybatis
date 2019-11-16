@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.huangxunyi.mapper.TestMapper">
+
+    <select id="getLog" resultType="com.huangxunyi.Log">
+        select * from sys_log_login where id = #{id}
+    </select>
+
+    <select id="getAll" resultType="com.huangxunyi.Log">
+        select * from sys_log_login
+    </select>
+
+    <update id="updateLog">
+        UPDATE sys_log_login SET message=#{message} WHERE id=#{id}
+    </update>
+
+    <insert id="insertLog">
+        insert into sys_log_login values (#{id},#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
+    </insert>
+
+    <delete id="deleteLog">
+        delete from sys_log_login where id = #{id}
+    </delete>
+
+</mapper>

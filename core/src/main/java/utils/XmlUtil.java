@@ -53,21 +53,23 @@ public final class XmlUtil {
                 } else if (SqlType.INSERT.value().equals(eleName)) {
                     mappedStatement.setSqlType(SqlType.INSERT);
                 } else if (SqlType.DELETE.value().equals(eleName)) {
-                    //todo
+                    mappedStatement.setSqlType(SqlType.DELETE);
                 } else {
                     System.err.println(" 暂不支持 ： " + eleName);
                     mappedStatement.setSqlType(SqlType.DEFAULT);
                 }
 
-
-                String sqlId = namespace + "." + element.attributeValue(Constants.XML_ELEMENT_ID);
+                String expID = element.attributeValue(Constants.XML_ELEMENT_ID);
+                String sqlId = namespace + "." + expID;
                 mappedStatement.setSqlId(sqlId);
                 mappedStatement.setNamespace(namespace);
-                mappedStatement.setSql(element.getStringValue().trim());
-
+                String trimSQL = element.getStringValue().trim();
+                mappedStatement.setSql(trimSQL);
+                mappedStatement.setSql(trimSQL);
                 stmts.add(mappedStatement);
 
                 configuration.addMappedStatement(sqlId, mappedStatement);
+                configuration.addMappedStatement(expID, mappedStatement);
                 configuration.addMapper(Class.forName(namespace));
             }
 

@@ -1,4 +1,4 @@
-package com.huangxunyi.datasource;
+package com.huangxunyi;
 
 
 import lombok.AllArgsConstructor;

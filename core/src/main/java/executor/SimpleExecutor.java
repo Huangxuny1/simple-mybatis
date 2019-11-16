@@ -1,27 +1,91 @@
 package executor;
 
-import mapping.MappedStatement;
 import executor.resultset.ResultSetsHandler;
+import executor.resultset.SimpleResultSetsHandler;
 import executor.statement.SimpleStatementHandler;
 import executor.statement.StatementHandler;
+import mapping.MappedStatement;
+import session.Configuration;
+import transaction.Transaction;
 
-import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-
-@Deprecated
 public class SimpleExecutor implements Executor {
-    private DataSource dataSource;
+    private Configuration configuration;
+    private Transaction transaction;
     private ResultSetsHandler resultSetsHandler;
 
-    public SimpleExecutor(DataSource dataSource, ResultSetsHandler resultSetsHandler) {
-        this.dataSource = dataSource;
-        this.resultSetsHandler = resultSetsHandler;
+    public SimpleExecutor(Configuration configuration, Transaction transaction) {
+        this.configuration = configuration;
+        this.transaction = transaction;
+        resultSetsHandler = new SimpleResultSetsHandler();
     }
 
+    @Override
+    public <E> List<E> query(MappedStatement mappedStatement, Object params) throws SQLException {
+        PreparedStatement stmt = null;
+        mappedStatement.setObj(params);
+        try {
+            StatementHandler statementHandler = new SimpleStatementHandler(mappedStatement, resultSetsHandler);
+            Connection connection = transaction.getConnection();
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+            return statementHandler.query(stmt, resultSetsHandler);
+        } finally {
+            closeStmt(stmt);
+        }
+    }
+
+    @Override
+    public int insert(MappedStatement ms, Object parameter) throws SQLException {
+        PreparedStatement stmt = null;
+        try {
+            Connection connection =transaction.getConnection();
+            ms.setObj(parameter);
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+            return statementHandler.update(stmt);
+        }finally {
+            closeStmt(stmt);
+        }
+    }
+
+    @Override
+    public int update(MappedStatement ms, Object parameter) throws SQLException {
+        PreparedStatement stmt = null;
+        try {
+            Connection connection = transaction.getConnection();
+            ms.setObj(parameter);
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+
+            return statementHandler.delete(stmt);
+        } finally {
+            closeStmt(stmt);
+        }
+    }
+
+    @Override
+    public int delete(MappedStatement ms, Object parameter) throws SQLException {
+        PreparedStatement stmt = null;
+        try {
+            Connection connection = transaction.getConnection();
+            ms.setObj(parameter);
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+
+            return statementHandler.delete(stmt);
+        } finally {
+            closeStmt(stmt);
+        }
+    }
 
     private void closeStmt(Statement stmt) {
         if (stmt != null) {
@@ -33,31 +97,11 @@ public class SimpleExecutor implements Executor {
         }
     }
 
-    @Override
-    public <E> List<E> query(MappedStatement mappedStatement, Object params) throws SQLException {
-        Statement stmt = null;
-        try {
-            Connection connection = dataSource.getConnection();
-            StatementHandler statementHandler = new SimpleStatementHandler(mappedStatement, resultSetsHandler);
-            stmt = statementHandler.prepare(connection);
-            return statementHandler.query(stmt, resultSetsHandler);
-        } finally {
-            closeStmt(stmt);
-        }
-
-
+    public void commit() throws SQLException {
+        transaction.commit();
     }
 
-    @Override
-    public int update(MappedStatement ms, Object parameter) throws SQLException {
-        Statement stmt = null;
-        try {
-            Connection connection = dataSource.getConnection();
-            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
-            stmt = statementHandler.prepare(connection);
-            return statementHandler.update(stmt);
-        } finally {
-            closeStmt(stmt);
-        }
+    public void rollback() throws SQLException {
+        transaction.rollback();
     }
 }
