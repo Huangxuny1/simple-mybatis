@@ -27,11 +27,13 @@ public class SimpleExecutor implements Executor {
 
     @Override
     public <E> List<E> query(MappedStatement mappedStatement, Object params) throws SQLException {
-        Statement stmt = null;
+        PreparedStatement stmt = null;
+        mappedStatement.setObj(params);
         try {
             StatementHandler statementHandler = new SimpleStatementHandler(mappedStatement, resultSetsHandler);
             Connection connection = transaction.getConnection();
-            stmt = statementHandler.prepare(connection);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
             return statementHandler.query(stmt, resultSetsHandler);
         } finally {
             closeStmt(stmt);
@@ -63,7 +65,23 @@ public class SimpleExecutor implements Executor {
             stmt = (PreparedStatement) statementHandler.prepare(connection);
             statementHandler.parameterize(stmt);
 
-            return statementHandler.update(stmt);
+            return statementHandler.delete(stmt);
+        } finally {
+            closeStmt(stmt);
+        }
+    }
+
+    @Override
+    public int delete(MappedStatement ms, Object parameter) throws SQLException {
+        PreparedStatement stmt = null;
+        try {
+            Connection connection = transaction.getConnection();
+            ms.setObj(parameter);
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+
+            return statementHandler.delete(stmt);
         } finally {
             closeStmt(stmt);
         }
@@ -81,5 +99,9 @@ public class SimpleExecutor implements Executor {
 
     public void commit() throws SQLException {
         transaction.commit();
+    }
+
+    public void rollback() throws SQLException {
+        transaction.rollback();
     }
 }

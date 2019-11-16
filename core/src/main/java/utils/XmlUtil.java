@@ -53,7 +53,7 @@ public final class XmlUtil {
                 } else if (SqlType.INSERT.value().equals(eleName)) {
                     mappedStatement.setSqlType(SqlType.INSERT);
                 } else if (SqlType.DELETE.value().equals(eleName)) {
-                    //todo
+                    mappedStatement.setSqlType(SqlType.DELETE);
                 } else {
                     System.err.println(" 暂不支持 ： " + eleName);
                     mappedStatement.setSqlType(SqlType.DEFAULT);

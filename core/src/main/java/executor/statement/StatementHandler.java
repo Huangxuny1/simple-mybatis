@@ -23,6 +23,9 @@ public interface StatementHandler {
     //update
     int update(Statement statement) throws SQLException;
 
+    //delete
+    int delete(Statement statement) throws SQLException;
+
     //select-->结果给ResultHandler
     <E> List<E> query(Statement statement, ResultSetsHandler resultSetsHandler) throws SQLException;
 

@@ -19,4 +19,7 @@
         INSERT INTO sys_log_login VALUES (#{id},#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
     </insert>
 
+<!--    <delete id="deleteLog">-->
+<!--        -->
+<!--    </delete>-->
 </mapper>

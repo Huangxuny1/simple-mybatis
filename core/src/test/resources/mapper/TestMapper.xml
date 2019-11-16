@@ -17,4 +17,9 @@
         insert into sys_log_login values (#{id},#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
     </insert>
 
+
+    <delete id="deleteLog">
+        delete from sys_log_login where id = #{id}
+    </delete>
+
 </mapper>

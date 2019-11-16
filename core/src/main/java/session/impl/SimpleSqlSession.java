@@ -22,12 +22,6 @@ public class SimpleSqlSession implements SqlSession {
 
 
     @Override
-    public <T> T selectOne(String statement) throws SQLException {
-        List<T> ts = this.selectList(statement);
-        return ts == null ? null : ts.get(0);
-    }
-
-    @Override
     public <T> T selectOne(String statement, Object parameter) throws SQLException {
         List<T> ts = this.selectList(statement, parameter);
         return ts == null ? null : ts.get(0);
@@ -71,17 +65,13 @@ public class SimpleSqlSession implements SqlSession {
 
     }
 
-    @Override
-    public int insert(String statement) {
-        return 0;
-    }
 
     @Override
     public int insert(String statement, Object parameter) {
         try {
             MappedStatement mappedStatement = configuration.getMappedStatement(statement);
             return executor.insert(mappedStatement, parameter);
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return -1;
@@ -98,14 +88,16 @@ public class SimpleSqlSession implements SqlSession {
         return -1;
     }
 
-    @Override
-    public int delete(String statement) {
-        return 0;
-    }
 
     @Override
     public int delete(String statement, Object parameter) {
-        return 0;
+        try {
+            MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+            return executor.delete(mappedStatement, parameter);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     @Override
@@ -118,19 +110,14 @@ public class SimpleSqlSession implements SqlSession {
     }
 
     @Override
-    public void commit(boolean force) {
-
-    }
-
-    @Override
     public void rollback() {
-
+        try {
+            executor.rollback();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
-    @Override
-    public void rollback(boolean force) {
-
-    }
 
     @Override
     public void close() {

@@ -25,6 +25,7 @@ public class Test {
             String name = declaredFields[i].getName().substring(0, 1).toUpperCase() + declaredFields[i].getName().substring(1);
             Method m1 = log1.getClass().getDeclaredMethod("get" + name);
             System.out.println(m1.getReturnType().getName());
+            System.out.println("====>"+m1.getReturnType().getTypeName());
             Object invoke = m1.invoke(log1);
             System.out.println(invoke);
 

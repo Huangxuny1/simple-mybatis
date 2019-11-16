@@ -32,7 +32,6 @@ public class SimpleDataSource implements DataSource {
     private String username;
     private String password;
 
-    // 11-09 添加事务相关
     private Boolean autoCommit;
     private Integer transactionIsolationLevel;
 

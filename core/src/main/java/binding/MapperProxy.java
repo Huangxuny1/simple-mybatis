@@ -51,7 +51,7 @@ public class MapperProxy<T> implements Serializable, InvocationHandler {
                     result = sqlSession.selectList(stmtID, args);
                 } else {
                     // 返回一个对象
-                    result = sqlSession.selectOne(stmtID, args);
+                    result = sqlSession.selectOne(stmtID, args[0]);
                 }
                 break;
 
@@ -60,6 +60,9 @@ public class MapperProxy<T> implements Serializable, InvocationHandler {
                 break;
             case INSERT:
                 result = sqlSession.insert(stmtID, args[0]);
+                break;
+            case DELETE:
+                result = sqlSession.delete(stmtID, args[0]);
                 break;
             default:
                 //todo defailt

@@ -42,8 +42,18 @@ public class SimpleStatementHandler implements StatementHandler {
     public void parameterize(PreparedStatement statement) throws SQLException {
         //todo Just Test  需要反射 #{} 中的字段 并获取 传入对象对应的field  并获得值 根据类型 set
         Object obj = mappedStatement.getObj();
-        for (int i =0;i< mappedStatement.getParams().size();i++){
-            ReflectionUtils.setParams(i,statement,obj,mappedStatement.getParams().get(i));
+        List<String> params = mappedStatement.getParams();
+        if (params.size() == 1) {
+            String typeName = obj.getClass().getTypeName();
+            if (String.class.getTypeName().equals(typeName)) {
+                statement.setString(1, (String) obj);
+            } else if ("int".equals(typeName) || Integer.class.getTypeName().equals(typeName)) {
+                statement.setInt(1, (int) obj);
+            }
+        } else if (params.size() > 1) {
+            for (int i = 0; i < params.size(); i++) {
+                ReflectionUtils.setParams(i, statement, obj, params.get(i));
+            }
         }
     }
 
@@ -52,7 +62,6 @@ public class SimpleStatementHandler implements StatementHandler {
     public void batch(Statement statement) throws SQLException {
         statement.addBatch(sql);
     }
-
 
 
     @Override
@@ -64,9 +73,17 @@ public class SimpleStatementHandler implements StatementHandler {
     }
 
     @Override
+    public int delete(Statement statement) throws SQLException {
+        PreparedStatement statement1 = (PreparedStatement) statement;
+        statement1.execute();
+        return statement1.getUpdateCount();
+    }
+
+    @Override
     public <E> List<E> query(Statement statement, ResultSetsHandler resultSetsHandler) throws SQLException {
-        statement.executeQuery(sql);
-        return resultSetsHandler.handleResultSets(statement, mappedStatement.getResultType());
+        PreparedStatement statement1 = (PreparedStatement) statement;
+        statement1.execute();
+        return resultSetsHandler.handleResultSets(statement1, mappedStatement.getResultType());
     }
 
     private void replaceWithQuestionMark(String source) {

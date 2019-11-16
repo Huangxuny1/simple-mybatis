@@ -53,6 +53,22 @@ public class TestSqlSession {
         sqlSession.commit();
     }
 
+    @Test
+    public void TestGetOne(){
+        System.out.println(mapper.getLog("402880e4646e54dc01646e555e950002"));
+    }
+
+    @Test
+    public void TestDeleteById(){
+        try {
+            System.out.println(mapper.deleteLog("id-"));
+
+            sqlSession.commit();
+        }catch ( Exception e){
+            sqlSession.rollback();
+        }
+    }
+
     @After
     public void Destroy() {
         sqlSession.close();

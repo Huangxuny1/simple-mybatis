@@ -6,12 +6,16 @@ import java.util.List;
 
 public interface TestMapper {
 
-    public Log getLog(String id);
+    Log getLog(String id);
 
-    public List<Log> getAll();
+    List<Log> getAll();
 
-    public int updateLog(Log log);
+    int updateLog(Log log);
 
-    public int insertLog(Log log);
+    int insertLog(Log log);
+
+    int deleteLog(Log log);
+
+    int deleteLog(String id);
 
 }

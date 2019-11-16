@@ -12,5 +12,9 @@ public interface Executor {
 
     int update(MappedStatement ms, Object parameter) throws SQLException;
 
+    int delete(MappedStatement ms, Object parameter) throws SQLException;
+
     void commit() throws SQLException;
+
+    void rollback() throws SQLException;
 }
