@@ -43,7 +43,14 @@ public class TestSqlSession {
         Log log = all.get(0);
         log.setMessage("Message");
         System.out.println(mapper.updateLog(log));
-//        sqlSession.commit();
+        sqlSession.commit();
+    }
+
+    @Test
+    public void TestInsert(){
+        Log log = new Log("id-", "create_time-", "ip-", "message-", "success-", "type-", "uid-");
+        System.out.println(mapper.insertLog(log));
+        sqlSession.commit();
     }
 
     @After

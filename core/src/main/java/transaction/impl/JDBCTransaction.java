@@ -26,7 +26,7 @@ public class JDBCTransaction implements Transaction {
     @Override
     public Connection getConnection() throws SQLException {
         connection = dataSource.getConnection();
-        connection.setAutoCommit(false);
+        connection.setAutoCommit(autoCommit);
         return connection;
     }
 

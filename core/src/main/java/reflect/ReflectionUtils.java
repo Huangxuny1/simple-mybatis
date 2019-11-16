@@ -1,6 +1,10 @@
 package reflect;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -37,5 +41,35 @@ public class ReflectionUtils {
                 throw new RuntimeException(" 暂不支持数据类型  : " + fieldName);
             }
         }
+    }
+
+
+    public static void setParams(int index, PreparedStatement stmt, Object obj, String field) {
+        try {
+            index++;
+            Method declaredMethod = obj.getClass().getDeclaredMethod("get" + toUpperFristChar(field));
+            String name = declaredMethod.getReturnType().getName();
+            Object value = declaredMethod.invoke(obj);
+            if (String.class.getName().equals(name)) {
+                stmt.setString(index, (String) value);
+            } else if ("int".equals(name) || Integer.class.getName().equals(name)) {
+                stmt.setInt(index, (int) value);
+            }  // todo
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static String toUpperFristChar(String s) {
+        char[] chars = s.toCharArray();
+        chars[0] -= 32;
+        return String.valueOf(chars);
     }
 }

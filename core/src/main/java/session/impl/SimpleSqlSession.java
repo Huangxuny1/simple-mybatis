@@ -78,7 +78,13 @@ public class SimpleSqlSession implements SqlSession {
 
     @Override
     public int insert(String statement, Object parameter) {
-        return 0;
+        try {
+            MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+            return executor.insert(mappedStatement, parameter);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return -1;
     }
 
     @Override

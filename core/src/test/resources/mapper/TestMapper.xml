@@ -2,11 +2,11 @@
 <mapper namespace="com.huangxunyi.mapper.TestMapper">
 
     <select id="getLog" resultType="com.huangxunyi.Log">
-        select * from log where id = #{id}
+        select * from sys_log_login where id = #{id}
     </select>
 
     <select id="getAll" resultType="com.huangxunyi.Log">
-        select * from log
+        select * from sys_log_login
     </select>
 
     <update id="updateLog">
@@ -14,7 +14,7 @@
     </update>
 
     <insert id="insertLog">
-        insert into log values (#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
+        insert into sys_log_login values (#{id},#{create_time},#{ip},#{message},#{success},#{type},#{user_id})
     </insert>
 
 </mapper>

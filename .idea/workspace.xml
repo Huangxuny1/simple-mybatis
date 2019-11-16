@@ -3,14 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c7be6d72-1480-4bda-95b8-c19b358942ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/binding/MapperProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/binding/MapperProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/Executor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/Executor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/statement/StatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/statement/StatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/mapping/MappedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/mapping/MappedStatement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSessionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/transaction/impl/JDBCTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/transaction/impl/JDBCTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/mapper/TestMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +51,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+          <option name="moduleName" value="core" />
+          <option name="title" value="core (Bundled Groovy 2.4.17)" />
+        </Entry>
+      </list>
+    </option>
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -118,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestMybatis">
+  <component name="RunManager" selected="JUnit.TestSqlSession">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.huangxunyi.mybatis.Test" />
       <module name="sample" />
@@ -160,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSqlSession.TestSessionGetAllByStmtID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSqlSession.TestInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
         <pattern>
@@ -170,7 +186,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
       <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
-      <option name="METHOD_NAME" value="TestSessionGetAllByStmtID" />
+      <option name="METHOD_NAME" value="TestInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestMybatis" />
         <item itemvalue="JUnit.TestSqlSession" />
-        <item itemvalue="JUnit.TestSqlSession.TestSessionGetAllByStmtID" />
+        <item itemvalue="JUnit.TestSqlSession.TestInsert" />
         <item itemvalue="JUnit.TestSqlSession.TestUpdate" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestMybatis" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +287,7 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/reflect/ReflectionUtils.java</url>
-          <line>29</line>
+          <line>33</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -316,7 +332,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -364,11 +380,6 @@
           <line>86</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
           <line>21</line>
@@ -376,12 +387,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java</url>
-          <line>87</line>
+          <line>93</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java</url>
-          <line>47</line>
+          <line>65</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -396,13 +407,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java</url>
-          <line>58</line>
+          <line>62</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.17/mysql-connector-java-8.0.17.jar!/com/mysql/cj/jdbc/ClientPreparedStatement.class</url>
-          <line>1060</line>
-          <option name="timeStamp" value="58" />
+          <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

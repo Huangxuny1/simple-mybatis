@@ -9,6 +9,7 @@ import session.Configuration;
 import transaction.Transaction;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
@@ -38,12 +39,29 @@ public class SimpleExecutor implements Executor {
     }
 
     @Override
+    public int insert(MappedStatement ms, Object parameter) throws SQLException {
+        PreparedStatement stmt = null;
+        try {
+            Connection connection =transaction.getConnection();
+            ms.setObj(parameter);
+            StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
+            return statementHandler.update(stmt);
+        }finally {
+            closeStmt(stmt);
+        }
+    }
+
+    @Override
     public int update(MappedStatement ms, Object parameter) throws SQLException {
-        Statement stmt = null;
+        PreparedStatement stmt = null;
         try {
             Connection connection = transaction.getConnection();
+            ms.setObj(parameter);
             StatementHandler statementHandler = new SimpleStatementHandler(ms, resultSetsHandler);
-            stmt = statementHandler.prepare(connection);
+            stmt = (PreparedStatement) statementHandler.prepare(connection);
+            statementHandler.parameterize(stmt);
 
             return statementHandler.update(stmt);
         } finally {
