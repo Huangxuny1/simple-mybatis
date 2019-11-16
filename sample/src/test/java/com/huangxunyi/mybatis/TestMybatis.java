@@ -33,7 +33,7 @@ public class TestMybatis {
 //        log.setMessage(" insert message ");
 //        log.setId("402880e4643a734301643a7403d4211");
 //        mapper.insertLog(log);
-        session.commit();
-        session.close();
+//        session.commit();
+//        session.close();
     }
 }

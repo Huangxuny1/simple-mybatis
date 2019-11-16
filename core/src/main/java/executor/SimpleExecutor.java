@@ -60,4 +60,8 @@ public class SimpleExecutor implements Executor {
             }
         }
     }
+
+    public void commit() throws SQLException {
+        transaction.commit();
+    }
 }

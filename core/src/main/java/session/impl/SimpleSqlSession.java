@@ -104,7 +104,11 @@ public class SimpleSqlSession implements SqlSession {
 
     @Override
     public void commit() {
-
+        try {
+            executor.commit();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override

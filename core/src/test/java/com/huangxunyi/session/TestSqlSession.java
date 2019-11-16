@@ -23,7 +23,7 @@ public class TestSqlSession {
         mapper = sqlSession.getMapper(TestMapper.class);
     }
 
-    //@Test
+    @Test
     public void TestSessionGetAllByStmtID() throws SQLException {
 
         List<Log> getAll = sqlSession.selectList("getAll");
@@ -31,7 +31,7 @@ public class TestSqlSession {
 
     }
 
-    //@Test
+    @Test
     public void TestSessionGetAllByMapper() {
         List<Log> all = mapper.getAll();
         System.out.println(all.toString());
@@ -42,7 +42,8 @@ public class TestSqlSession {
         List<Log> all = mapper.getAll();
         Log log = all.get(0);
         log.setMessage("Message");
-        mapper.updateLog(log);
+        System.out.println(mapper.updateLog(log));
+//        sqlSession.commit();
     }
 
     @After
