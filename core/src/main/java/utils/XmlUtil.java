@@ -73,8 +73,7 @@ public final class XmlUtil {
                 configuration.addMapper(Class.forName(namespace));
             }
 
-        } catch (
-                Exception e) {
+        } catch ( Exception e) {
             e.printStackTrace();
         }
     }

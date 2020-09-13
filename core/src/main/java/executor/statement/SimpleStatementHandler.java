@@ -4,14 +4,17 @@ import mapping.MappedStatement;
 import executor.resultset.ResultSetsHandler;
 import reflect.ReflectionUtils;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
 
 public class SimpleStatementHandler implements StatementHandler {
 
@@ -49,6 +52,16 @@ public class SimpleStatementHandler implements StatementHandler {
                 statement.setString(1, (String) obj);
             } else if ("int".equals(typeName) || Integer.class.getTypeName().equals(typeName)) {
                 statement.setInt(1, (int) obj);
+            }else {
+                try {
+                    statement.setString(1, (String) obj.getClass().getMethod("get"+upperCase(params.get(0))).invoke(obj));
+                } catch (NoSuchMethodException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                }
             }
         } else if (params.size() > 1) {
             for (int i = 0; i < params.size(); i++) {
@@ -97,5 +110,13 @@ public class SimpleStatementHandler implements StatementHandler {
         mappedStatement.setParams(params);
         String sql = matcher.replaceAll("?");
         this.sql = sql;
+    }
+
+    public String upperCase(String str) {
+        char[] ch = str.toCharArray();
+        if (ch[0] >= 'a' && ch[0] <= 'z') {
+            ch[0] = (char) (ch[0] - 32);
+        }
+        return new String(ch);
     }
 }

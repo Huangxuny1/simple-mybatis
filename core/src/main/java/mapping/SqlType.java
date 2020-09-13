@@ -9,7 +9,7 @@ public enum SqlType
 
         DEFAULT("default");
 
-        private String value;
+        private final String value;
 
         private SqlType(String value)
         {

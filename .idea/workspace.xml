@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7be6d72-1480-4bda-95b8-c19b358942ca" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/TestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample/src/main/resources/mapper/TestMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/mapping/SqlType.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/mapping/SqlType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/utils/XmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/utils/XmlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sample/src/test/resources/mybatis-config.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,18 +56,10 @@
     <option name="list">
       <list>
         <Entry>
-          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
           <option name="moduleName" value="core" />
-          <option name="title" value="core (Bundled Groovy 2.4.17)" />
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
         </Entry>
       </list>
-    </option>
-  </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
     </option>
   </component>
   <component name="JsFlowSettings">
@@ -66,81 +71,61 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.6.2" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.2" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1TMqkVE9tMyadduJ8VPQmpqlAVF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\test\resources\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.huangxunyi.datasource" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitRepo\simple-mybatis\sample\src\main\resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/core/src/test/resources" />
       <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\main\java\mapping" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.huangxunyi" />
+      <recent name="com.huangxunyi.datasource" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEAWorkspace\simple-mybatis\core\src\test\resources\mapper" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.TestSqlSession">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.mybatis.Test" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.App" />
       <module name="sample" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.huangxunyi.mybatis.*" />
+          <option name="PATTERN" value="com.huangxunyi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSqlSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.huangxunyi.session.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
-      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSqlSession.TestGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSqlSession.TestInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core" />
       <extension name="coverage">
         <pattern>
@@ -171,7 +156,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
       <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
-      <option name="METHOD_NAME" value="TestGet" />
+      <option name="METHOD_NAME" value="TestInsert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,25 +178,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSqlSession.TestSessionGetAllByStmtID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.huangxunyi.session.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.huangxunyi.session" />
+      <option name="MAIN_CLASS_NAME" value="com.huangxunyi.session.TestSqlSession" />
+      <option name="METHOD_NAME" value="TestSessionGetAllByStmtID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestSqlSession" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.TestSqlSession.TestDeleteById" />
-        <item itemvalue="JUnit.TestSqlSession.TestGet" />
+        <item itemvalue="JUnit.TestSqlSession.TestInsert" />
         <item itemvalue="JUnit.TestSqlSession.TestSessionGetAllByMapper" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.TestSqlSession.TestSessionGetAllByStmtID" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -234,20 +225,19 @@
       <workItem from="1573524412401" duration="3966000" />
       <workItem from="1573569138155" duration="4882000" />
       <workItem from="1573780549641" duration="15238000" />
+      <workItem from="1599976098728" duration="4683000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -266,6 +256,73 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="459" y="231" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599988544300">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="231" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1599988544300" />
+    <state x="542" y="97" key="#xdebugger.evaluate" timestamp="1599990698441">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="542" y="97" key="#xdebugger.evaluate/0.0.1366.728@0.0.1366.728" timestamp="1599990698441" />
+    <state width="491" height="466" key="DebuggerActiveHint" timestamp="1599990477037">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="491" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1599990477037" />
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1599990726879">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599990726879" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1599986873818">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599986873818" />
+    <state width="691" height="348" key="XDebugger.FullValuePopup" timestamp="1599988952262">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="691" height="348" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1599988952262" />
+    <state x="146" y="200" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599990199165">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="146" y="200" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1599990199165" />
+    <state x="385" y="98" width="596" height="532" key="find.popup" timestamp="1599988262932">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="385" y="98" width="596" height="532" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599988262932" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599990020047">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599990020047" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -310,7 +367,7 @@
           <line>87</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/datasource/session/TestSqlSession.java</url>
           <line>17</line>
           <option name="timeStamp" value="16" />
@@ -355,12 +412,12 @@
           <line>76</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/BaseExecutor.java</url>
           <line>116</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.3/mybatis-3.5.3-sources.jar!/org/apache/ibatis/executor/SimpleExecutor.java</url>
           <line>86</line>
           <option name="timeStamp" value="46" />
@@ -370,12 +427,12 @@
           <line>21</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java</url>
           <line>83</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/SimpleExecutor.java</url>
           <line>67</line>
           <option name="timeStamp" value="52" />
@@ -385,40 +442,65 @@
           <line>42</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java</url>
           <line>31</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java</url>
-          <line>71</line>
+          <line>84</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/Test.java</url>
-          <line>18</line>
+          <line>17</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
           <line>51</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
           <line>57</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java</url>
-          <line>84</line>
+          <line>97</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
           <line>63</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/sample/src/test/java/com/huangxunyi/mybatis/TestMybatis.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/test/java/com/huangxunyi/session/TestSqlSession.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/session/impl/SimpleSqlSession.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sample/src/main/java/com/huangxunyi/App.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/executor/statement/SimpleStatementHandler.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
